@@ -49,6 +49,8 @@ alias agi="sudo $APT install"      # ai
 alias agp="sudo $APT purge"        # ap
 alias agr="sudo $APT remove"       # ar
 alias agu="sudo $APT update"       # ad
+alias ags="sudo $APT search"      
+alias agsh="sudo $APT show"      
 alias agud="sudo $APT update && sudo $APT dist-upgrade" #adu
 alias agug="sudo $APT upgrade"     # ag
 alias aguu="sudo $APT update && sudo $APT upgrade"      #adg
@@ -67,7 +69,8 @@ compdef _agud agud="sudo $APT update && sudo $APT dist-upgrade"
 compdef _agug agug="sudo $APT upgrade"
 compdef _aguu aguu="sudo $APT update && sudo $APT upgrade"
 compdef _agar agar="sudo $APT autoremove"
-
+compdef _ags ags="sudo $APT search"      
+compdef _agsh  agsh="sudo $APT show"      
 # Remove ALL kernel images and headers EXCEPT the one in use
 alias kclean='sudo aptitude remove -P ?and(~i~nlinux-(ima|hea) \
 	?not(~n`uname -r`))'
