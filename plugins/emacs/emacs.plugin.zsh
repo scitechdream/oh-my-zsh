@@ -19,7 +19,7 @@ if "$ZSH/tools/require_tool.sh" emacsclient 24 2>/dev/null ; then
     alias emacs="$EMACS_PLUGIN_LAUNCHER --no-wait"
     alias e=emacs
     # open terminal emacsclient
-    alias te="$EMACS_PLUGIN_LAUNCHER -nw"
+    alias ect="$EMACS_PLUGIN_LAUNCHER -nw"
 
     # same than M-x eval but from outside Emacs.
     alias eeval="$EMACS_PLUGIN_LAUNCHER --eval"
