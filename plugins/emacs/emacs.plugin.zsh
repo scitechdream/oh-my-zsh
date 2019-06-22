@@ -24,7 +24,7 @@ if "$ZSH/tools/require_tool.sh" emacsclient 24 2>/dev/null ; then
     # same than M-x eval but from outside Emacs.
     alias eeval="$EMACS_PLUGIN_LAUNCHER --eval"
     # create a new X frame
-    alias eframe='emacsclient --alternate-editor "" --create-frame'
+    alias ec='emacsclient --alternate-editor "" --create-frame'
 
 
     # Write to standard output the path to the file
