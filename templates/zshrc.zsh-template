@@ -74,6 +74,8 @@ git-open
 zsh-syntax-highlighting
 zsh-autosuggestions
 z
+command-not-found
+common-aliases
 extract
 web-search
 systemadmin
