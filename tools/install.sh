@@ -32,8 +32,8 @@
 set -e
 
 # Default settings
-ZSH=${ZSH:-~/.oh-my-zsh}
-REPO=${REPO:-robbyrussell/oh-my-zsh}
+ZSH=${ZSH:-~/git.d/.oh-my-zsh}
+REPO=${REPO:-scitechdream/oh-my-zsh}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
 
