@@ -146,14 +146,14 @@ function ggu() {
 }
 compdef _git ggu=git-checkout
 
-alias ggpur='ggu'
-alias ggpull='git pull origin "$(git_current_branch)"'
-alias ggpush='git push origin "$(git_current_branch)"'
+alias gpur='ggu'
+alias gpull='git pull origin "$(git_current_branch)"'
+alias gpo='git push origin "$(git_current_branch)"'
 
 alias ggsup='git branch --set-upstream-to=origin/$(git_current_branch)'
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
 
-alias ghh='git help'
+alias ghp='git help'
 
 alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
@@ -189,7 +189,7 @@ alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpf='git push --force-with-lease'
 alias gpf!='git push --force'
-alias gpoat='git push origin --all && git push origin --tags'
+alias gpoat='git push origin --all && git push origin --tag'
 alias gpu='git push upstream'
 alias gpv='git push -v'
 
@@ -242,6 +242,8 @@ alias gsu='git submodule update'
 
 alias gts='git tag -s'
 alias gtv='git tag | sort -V'
+alias gta="git tag -a"
+alias gtd="git tag -d"
 alias gtl='gtl(){ git tag --sort=-v:refname -n -l ${1}* }; noglob gtl'
 
 alias gunignore='git update-index --no-assume-unchanged'
