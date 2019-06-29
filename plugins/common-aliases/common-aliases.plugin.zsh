@@ -18,7 +18,8 @@ alias lm='ls -alhF|less'
 alias md='mkdir -p'
 alias rd='rmdir'
 
-alias vzrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
+alias ezrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
+alias vzrc='vi ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
