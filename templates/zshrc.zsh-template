@@ -86,7 +86,6 @@ vscode
 
 source $ZSH/oh-my-zsh.sh
 
-HIST_STAMPS="yyyy-mm-dd"
 # User configuration
 source $ZSH/custom/plugins/incr/incr*.zsh
 # export MANPATH="/usr/local/man:$MANPATH"
