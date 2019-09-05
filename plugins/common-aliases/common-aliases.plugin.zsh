@@ -20,10 +20,12 @@ alias rd='rmdir'
 
 alias ezrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 alias vzrc='vi ~/.zshrc' # Quick access to the ~/.zshrc file
+alias szrc='source ~/.zshrc'
 
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
+alias df='df -h'
 alias t='tail -f'
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
