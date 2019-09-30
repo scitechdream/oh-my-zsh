@@ -23,8 +23,14 @@ The plugin uses a custom launcher (which we'll call here `$EMACS_LAUNCHER`) that
 |--------|----------------------------------------------------|----------------------------------------------------------------|
 | emacs  | `$EMACS_LAUNCHER --no-wait`                        | Opens a temporary emacsclient frame                            |
 | e      | `emacs`                                            | Same as emacs alias                                            |
+<<<<<<< HEAD
 | ect     | `$EMACS_LAUNCHER -nw`                              | Open terminal emacsclient                                      |
 | eeval  | `$EMACS_LAUNCHER --eval`                           | Same as `M-x eval` but from outside Emacs                      |
 | ec | `emacsclient --alternate-editor "" --create-frame` | Create new X frame                                             |
+=======
+| te     | `$EMACS_LAUNCHER -nw`                              | Open terminal emacsclient                                      |
+| eeval  | `$EMACS_LAUNCHER --eval`                           | Same as `M-x eval` but from outside Emacs                      |
+| eframe | `emacsclient --alternate-editor "" --create-frame` | Create new X frame                                             |
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
 | efile  | -                                                  | Print the path to the file open in the current buffer          |
 | ecd    | -                                                  | Print the directory of the file open in the the current buffer |

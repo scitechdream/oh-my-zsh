@@ -22,6 +22,8 @@ alias ezrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 alias vzrc='vi ~/.zshrc' # Quick access to the ~/.zshrc file
 alias szrc='source ~/.zshrc'
 
+alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
+
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
@@ -40,6 +42,7 @@ alias sortnr='sort -n -r'
 alias unexport='unset'
 alias svi="sudo vim"
 alias vi="vim"
+alias t='tail -f'
 
 # Command line head / tail shortcuts
 alias -g H='| head'
@@ -56,6 +59,21 @@ alias -g P="2>&1| pygmentize -l pytb"
 # Language aliases
 alias py='python'
 alias ipy='ipython'
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+alias help='man'
+alias p='ps -f'
+alias sortnr='sort -n -r'
+alias unexport='unset'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 
 # zsh is able to auto-do some kungfoo
 # depends on the SUFFIX :)

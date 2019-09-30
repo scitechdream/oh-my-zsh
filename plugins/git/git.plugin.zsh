@@ -192,7 +192,7 @@ alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpf='git push --force-with-lease'
 alias gpf!='git push --force'
-alias gpoat='git push origin --all && git push origin --tag'
+alias gpoat='git push origin --all && git push origin --tags'
 alias gpu='git push upstream'
 alias gpv='git push -v'
 
@@ -251,7 +251,7 @@ alias gts='git tag -s'
 alias gtv='git tag | sort -V'
 alias gta="git tag -a"
 alias gtd="git tag -d"
-alias gtl='gtl(){ git tag --sort=-v:refname -n -l ${1}* }; noglob gtl'
+alias gtl='gtl(){ git tag --sort=-v:refname -n -l "${1}*" }; noglob gtl'
 
 alias gunignore='git update-index --no-assume-unchanged'
 alias gunwip='git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'

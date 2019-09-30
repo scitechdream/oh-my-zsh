@@ -72,7 +72,11 @@ if [[ $use_sudo -eq 1 ]]; then
 # commands using su #########
 else
     alias aac="su -ls '$apt_pref autoclean' root"
+<<<<<<< HEAD
     abd() {
+=======
+    function abd() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
         cmd="su -lc '$apt_pref build-dep $@' root"
         print "$cmd"
         eval "$cmd"
@@ -83,17 +87,29 @@ else
     alias adu="su -lc '$apt_pref update && aptitude dist-upgrade' root"
     alias afu="su -lc '$apt-file update'"
     alias au="su -lc '$apt_pref $apt_upgr' root"
+<<<<<<< HEAD
     ai() {
+=======
+    function ai() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
         cmd="su -lc 'aptitude -P install $@' root"
         print "$cmd"
         eval "$cmd"
     }
+<<<<<<< HEAD
     ap() {
+=======
+    function ap() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
         cmd="su -lc '$apt_pref -P purge $@' root"
         print "$cmd"
         eval "$cmd"
     }
+<<<<<<< HEAD
     ar() {
+=======
+    function ar() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
         cmd="su -lc '$apt_pref -P remove $@' root"
         print "$cmd"
         eval "$cmd"
@@ -114,7 +130,11 @@ fi
 # Registers a compdef for $1 that calls $apt_pref with the commands $2
 # To do that it creates a new completion function called _apt_pref_$2
 #
+<<<<<<< HEAD
 apt_pref_compdef() {
+=======
+function apt_pref_compdef() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
     local f fb
     f="_apt_pref_${2}"
 
@@ -151,7 +171,11 @@ alias mydeb='time dpkg-buildpackage -rfakeroot -us -uc'
 
 # Functions #################################################################
 # create a simple script that can be used to 'duplicate' a system
+<<<<<<< HEAD
 apt-copy() {
+=======
+function apt-copy() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
     print '#!/bin/sh'"\n" > apt-copy.sh
 
     cmd='$apt_pref install'
@@ -173,7 +197,11 @@ apt-copy() {
 #   apt-history rollback
 #   apt-history list
 # Based On: https://linuxcommando.blogspot.com/2008/08/how-to-show-apt-log-history.html
+<<<<<<< HEAD
 apt-history () {
+=======
+function apt-history() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
   case "$1" in
     install)
       zgrep --no-filename 'install ' $(ls -rt /var/log/dpkg*)
@@ -202,7 +230,11 @@ apt-history () {
 }
 
 # Kernel-package building shortcut
+<<<<<<< HEAD
 kerndeb () {
+=======
+function kerndeb() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
     # temporarily unset MAKEFLAGS ( '-j3' will fail )
     MAKEFLAGS=$( print - $MAKEFLAGS | perl -pe 's/-j\s*[\d]+//g' )
     print '$MAKEFLAGS set to '"'$MAKEFLAGS'"
@@ -216,10 +248,17 @@ kerndeb () {
 }
 
 # List packages by size
+<<<<<<< HEAD
 function apt-list-packages {
+=======
+function apt-list-packages() {
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a
     dpkg-query -W --showformat='${Installed-Size} ${Package} ${Status}\n' | \
     grep -v deinstall | \
     sort -n | \
     awk '{print $1" "$2}'
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f9e7c45a484723f693a77ab6128a1cc163f3704a

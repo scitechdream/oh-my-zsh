@@ -9,6 +9,7 @@ export ZSH=$HOME/git.d/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="rkj-repos"
+#ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -58,7 +59,7 @@ ZSH_THEME="rkj-repos"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="myyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -90,6 +91,7 @@ source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/plugins/incr/incr*.zsh
 # export MANPATH="/usr/local/man:$MANPATH"
 alias ag='alias | grep'
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
